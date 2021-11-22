@@ -8,6 +8,10 @@ public abstract class UIComponent {
 
     private Dimension size;
 
+    public UIComponent(Point position) {
+        this.position = position;
+    }
+
     public Point getPosition() {
         return position;
     }
