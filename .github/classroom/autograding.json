@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Step 1",
+      "setup": "",
+      "run": "mvn clean -Dtest=Step1Tests test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Step 2",
+      "setup": "",
+      "run": "mvn clean -Dtest=Step2Tests test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Step 3",
+      "setup": "",
+      "run": "mvn clean -Dtest=Step3Tests test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Step 4",
+      "setup": "",
+      "run": "mvn clean -Dtest=Step4Tests test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
