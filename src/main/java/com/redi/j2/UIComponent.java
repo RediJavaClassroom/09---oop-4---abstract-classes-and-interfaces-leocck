@@ -8,8 +8,9 @@ public abstract class UIComponent {
 
     private Dimension size;
 
-    public UIComponent(Point position) {
+    public UIComponent(Point position, Dimension size) {
         this.position = position;
+        this.size = size;
     }
 
     public Point getPosition() {
@@ -26,5 +27,14 @@ public abstract class UIComponent {
 
     public void setSize(Dimension size) {
         this.size = size;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("UIComponent{");
+        sb.append("position=").append(position);
+        sb.append(", size=").append(size);
+        sb.append('}');
+        return sb.toString();
     }
 }
