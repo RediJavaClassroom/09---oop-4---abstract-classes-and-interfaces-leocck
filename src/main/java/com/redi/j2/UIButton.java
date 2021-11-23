@@ -2,7 +2,7 @@ package com.redi.j2;
 
 import java.awt.*;
 
-public class UIButton extends UIComponent {
+public class UIButton extends UIComponent implements Displayable, ClickListener {
 
     private String text;
 
@@ -43,5 +43,17 @@ public class UIButton extends UIComponent {
         sb.append(", size=").append(getSize());
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public void draw() {
+        System.out.println(this);
+    }
+
+    @Override
+    public void onClickEvent() {
+        if(enabled) {
+            System.out.println("The button "+this.text+" was clicked");
+        }
     }
 }
